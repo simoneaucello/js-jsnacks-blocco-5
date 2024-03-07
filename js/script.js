@@ -43,7 +43,7 @@ const zucchine = [
     lunghezza: 11
   },
   {
-    varietà: 'Zucchine pâtisson ',
+    varietà: 'Zucchine pâtisson',
     peso: 1.5,
     lunghezza: 13
   },
@@ -123,3 +123,20 @@ console.log(fusedArray);
 
 // JSnack 5
 
+function arrSlice(array, a, b){
+  if (a < 0 || b > array.length - 1){
+    return [];
+  }
+
+  const result = [];
+  for(let i = a; i <= b; i++) {
+    result.push(array[i]);
+  }
+  return result;
+}
+
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const a = 2;
+const b = 7;
+const slicedArray = arrSlice(myArray, a, b);
+console.log(slicedArray);
