@@ -94,3 +94,32 @@ const inputString = "Ciao";
 console.log(inputString);
 const reversedString = reverseString(inputString);
 console.log(reversedString); 
+
+// JSnack 4
+
+
+function fusionArrays(array1, array2) {
+
+// prendo due array come input e aggiungo alternativamente gli elementi da ciascun array al nuovo array risultante. Infine restituisco l'array fuso. 
+
+  const fusedArray = [];
+
+  for (let i = 0; i < array1.length; i++) {
+      if (i < array1.length) {
+          fusedArray.push(array1[i]);
+      }
+      if (i < array2.length) {
+          fusedArray.push(array2[i]);
+      }
+  }
+  return fusedArray;
+}
+
+const array1 = ['Nike', 'Adidas', 'Puma'];
+const array2 = [43, 44, 45];
+const fusedArray = fusionArrays(array1, array2);
+console.log(fusedArray); 
+
+
+// JSnack 5
+
